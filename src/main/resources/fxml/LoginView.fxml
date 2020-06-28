@@ -18,7 +18,7 @@
                         <Font size="24.0" />
                      </font>
                   </Text>
-                  <TextField layoutX="186.0" layoutY="64.0" prefHeight="30.0" prefWidth="204.0">
+                  <TextField fx:id="usernameText" layoutX="186.0" layoutY="64.0" prefHeight="30.0" prefWidth="204.0">
                      <HBox.margin>
                         <Insets top="3.0" />
                      </HBox.margin>
@@ -38,7 +38,7 @@
                         <Font size="24.0" />
                      </font>
                   </Text>
-                  <TextField layoutX="186.0" layoutY="64.0" prefHeight="30.0" prefWidth="204.0">
+                  <TextField fx:id="passwordText" layoutX="186.0" layoutY="64.0" prefHeight="30.0" prefWidth="204.0">
                      <HBox.margin>
                         <Insets top="3.0" />
                      </HBox.margin>
@@ -52,12 +52,12 @@
       </VBox>
       <HBox layoutX="244.0" layoutY="222.0" AnchorPane.rightAnchor="93.0">
          <children>
-            <Button layoutX="244.0" layoutY="222.0" mnemonicParsing="false" text="登陆">
+            <Button layoutX="244.0" layoutY="222.0" mnemonicParsing="false" text="登陆" onAction="#login">
                <HBox.margin>
                   <Insets right="17.0" />
                </HBox.margin>
             </Button>
-            <Button layoutX="283.0" layoutY="222.0" mnemonicParsing="false" text="注册" />
+            <Button layoutX="283.0" layoutY="222.0" mnemonicParsing="false" text="注册" onAction="#register"/>
          </children>
       </HBox>
    </children>

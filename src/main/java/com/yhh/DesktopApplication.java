@@ -2,7 +2,6 @@ package com.yhh;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.yhh.view.FundListView;
 import com.yhh.view.LoginView;
 
 import de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport;
@@ -17,7 +16,7 @@ public class DesktopApplication extends AbstractJavaFxApplicationSupport{
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        launch(DesktopApplication.class, FundListView.class, args);
+        launch(DesktopApplication.class, LoginView.class, args);
     }
 
     /**
